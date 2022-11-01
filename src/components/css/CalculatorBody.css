@@ -1,0 +1,215 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+html{
+  background-color: black;
+  margin:0;
+  padding:0;
+  height: 100vh;
+
+}
+
+
+
+.App{
+  background-image: linear-gradient(to left top, #035ccf, #007bde, #0096e0, #00addb, #0bc2d3);
+    animation: gradient 15s ease infinite;
+  text-align: center;
+  color: white;
+  font-family: 'Righteous';
+
+
+}
+
+
+#title{
+  font-size: 40pt;
+  margin: 0;
+  padding: 0;
+  padding-top:1em;
+}
+
+#reactlogo{
+  margin-top: 1em;
+
+  margin-bottom: 3em;
+  width: 120px;
+  height: 120px;
+}
+
+#tableid{
+  background-color: black;
+  text-align: center;
+  color: white;
+}
+#resultContainer{
+  padding-bottom: 0;
+}
+#result{
+
+  font-size: 20pt;
+  margin-left: 35%;
+  margin-right: 35%;
+  padding-top: 5em; 
+  padding-bottom: 13em;
+}
+
+#rowlist{
+  padding: 0;
+  margin-bottom: 3em;
+}
+
+#rowlist *{
+  list-style-type: none;
+  font-size: 13pt;
+  margin-top:0.3em;
+  gap: 0.3%;
+}
+.list{
+  display: flex;
+  justify-content: center;
+}
+
+.btn.btn-primary{
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.inputtext{
+  text-align: center;
+}
+
+.form-switch {
+  padding: 0;
+}
+
+.form-check {
+  display: block;
+  min-height: 1.5rem;
+  padding-left: 3.3em;
+  margin-bottom: 0;
+
+}
+
+.form-check-input{
+  font-size: 16pt !important;
+}
+
+#controlbuttons{
+  display: flex;
+  gap:1%;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+
+#addBtn:hover{
+  background-color: rgb(3, 201, 3);
+  border-color: none;
+  color: white;
+}
+
+#removeBtn:hover{
+  background-color: red;
+  border-color: red;
+  color: white;
+}
+
+#resetBtn:hover{
+  background-color: yellow;
+  border-color: yellow;
+  color: rgb(41, 40, 40);
+}
+
+
+@media only screen and (max-width: 600px) { 
+  html, body{
+    background-color: black;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+  .App{
+    background-image: linear-gradient(to left top, #035ccf, #007bde, #0096e0, #00addb, #0bc2d3);
+    animation: gradient 15s ease infinite;  
+    margin: 0;
+    padding: 0;
+  }
+
+  #title{
+    font-size: 50pt;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+  }
+
+  #reactlogo{
+    margin-bottom: 1em;
+    width: 150px;
+    height: 150px;
+  }
+
+  #rowlist *{
+    list-style-type: none;
+    font-size: 12pt;
+    margin-top:0.3em;
+    gap: 0.3%;
+  }
+
+  #controlbuttons{
+    font-size: 20pt;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin:10%;
+  }
+  #addBtn, #removeBtn, #resetBtn{
+    height: 4em;
+  }
+  .list{
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+  }
+
+  .signlist{
+    flex:0.2;
+    height: 2em;
+    width: fit-content;
+  }
+  .inputtext{
+    flex: 1;
+    margin-right: 2px;
+    margin-left: 2px;
+  }
+
+  #deleteBtn{
+    flex: 1;
+    margin-right: 2px;
+    margin-left: 2px;
+
+  }
+
+  .form-check-input{
+    margin-left: 2px;
+    flex: 1;
+  }
+
+
+}
+
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+
+  50% {
+      background-position: 100% 50%;
+  }
+
+  100% {
+      background-position: 0% 50%;
+  }
+}
